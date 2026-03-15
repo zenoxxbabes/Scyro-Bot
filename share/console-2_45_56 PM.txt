@@ -1,0 +1,450 @@
+Requirement already satisfied: markupsafe in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (3.0.3)
+Requirement already satisfied: werkzeug>=3.0 in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (3.1.3)
+Requirement already satisfied: braceexpand>=0.1.7 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (0.1.7)
+Requirement already satisfied: import_expression<3.0.0,>=2.0.0 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (2.2.1.post1)
+Requirement already satisfied: tabulate>=0.9.0 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (0.9.0)
+Requirement already satisfied: typing-extensions<5,>=4.3 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (4.15.0)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (25.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (6.7.0)
+Requirement already satisfied: propcache>=0.2.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (1.22.0)
+Requirement already satisfied: zope.interface in ./.local/lib/python3.11/site-packages (from datetime->-r /home/container/requirements.txt (line 7)) (8.0.1)
+Requirement already satisfied: pytz in ./.local/lib/python3.11/site-packages (from datetime->-r /home/container/requirements.txt (line 7)) (2025.2)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./.local/lib/python3.11/site-packages (from pymongo->-r /home/container/requirements.txt (line 13)) (2.8.0)
+Requirement already satisfied: async-timeout in ./.local/lib/python3.11/site-packages (from wavelink->-r /home/container/requirements.txt (line 14)) (5.0.1)
+Requirement already satisfied: anyio in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (4.11.0)
+Requirement already satisfied: certifi in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (1.0.9)
+Requirement already satisfied: idna in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (3.11)
+Requirement already satisfied: h11>=0.16 in ./.local/lib/python3.11/site-packages (from httpcore==1.*->httpx->-r /home/container/requirements.txt (line 15)) (0.16.0)
+Requirement already satisfied: tqdm>=4.9.0 in ./.local/lib/python3.11/site-packages (from Augmentor->-r /home/container/requirements.txt (line 19)) (4.67.1)
+Requirement already satisfied: six in ./.local/lib/python3.11/site-packages (from langdetect->-r /home/container/requirements.txt (line 23)) (1.17.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.local/lib/python3.11/site-packages (from requests->-r /home/container/requirements.txt (line 27)) (3.4.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.local/lib/python3.11/site-packages (from requests->-r /home/container/requirements.txt (line 27)) (2.5.0)
+Requirement already satisfied: distro<2,>=1.7.0 in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (1.9.0)
+Requirement already satisfied: jiter<1,>=0.10.0 in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (0.11.1)
+Requirement already satisfied: pydantic<3,>=1.9.0 in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (2.12.3)
+Requirement already satisfied: sniffio in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (1.3.1)
+Requirement already satisfied: google-ai-generativelanguage==0.6.15 in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (0.6.15)
+Requirement already satisfied: google-api-core in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (2.28.1)
+Requirement already satisfied: google-api-python-client in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (2.186.0)
+Requirement already satisfied: google-auth>=2.15.0 in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (2.42.1)
+Requirement already satisfied: protobuf in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (5.29.5)
+Requirement already satisfied: proto-plus<2.0.0dev,>=1.22.3 in ./.local/lib/python3.11/site-packages (from google-ai-generativelanguage==0.6.15->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.26.1)
+Requirement already satisfied: googleapis-common-protos<2.0.0,>=1.56.2 in ./.local/lib/python3.11/site-packages (from google-api-core->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.71.0)
+Requirement already satisfied: cachetools<7.0,>=2.0.0 in ./.local/lib/python3.11/site-packages (from google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (6.2.1)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in ./.local/lib/python3.11/site-packages (from google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.4.2)
+Requirement already satisfied: rsa<5,>=3.1.4 in ./.local/lib/python3.11/site-packages (from google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (4.9.1)
+Requirement already satisfied: h2>=3.1.0 in ./.local/lib/python3.11/site-packages (from hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (4.3.0)
+Requirement already satisfied: priority in ./.local/lib/python3.11/site-packages (from hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (2.0.0)
+Requirement already satisfied: wsproto>=0.14.0 in ./.local/lib/python3.11/site-packages (from hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (1.2.0)
+Requirement already satisfied: annotated-types>=0.6.0 in ./.local/lib/python3.11/site-packages (from pydantic<3,>=1.9.0->openai->-r /home/container/requirements.txt (line 28)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.4 in ./.local/lib/python3.11/site-packages (from pydantic<3,>=1.9.0->openai->-r /home/container/requirements.txt (line 28)) (2.41.4)
+Requirement already satisfied: typing-inspection>=0.4.2 in ./.local/lib/python3.11/site-packages (from pydantic<3,>=1.9.0->openai->-r /home/container/requirements.txt (line 28)) (0.4.2)
+Requirement already satisfied: httplib2<1.0.0,>=0.19.0 in ./.local/lib/python3.11/site-packages (from google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.31.0)
+Requirement already satisfied: google-auth-httplib2<1.0.0,>=0.2.0 in ./.local/lib/python3.11/site-packages (from google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.2.1)
+Requirement already satisfied: uritemplate<5,>=3.0.1 in ./.local/lib/python3.11/site-packages (from google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (4.2.0)
+Requirement already satisfied: grpcio<2.0.0,>=1.33.2 in ./.local/lib/python3.11/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.76.0)
+Requirement already satisfied: grpcio-status<2.0.0,>=1.33.2 in ./.local/lib/python3.11/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.71.2)
+Requirement already satisfied: hyperframe<7,>=6.1 in ./.local/lib/python3.11/site-packages (from h2>=3.1.0->hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (6.1.0)
+Requirement already satisfied: hpack<5,>=4.1 in ./.local/lib/python3.11/site-packages (from h2>=3.1.0->hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (4.1.0)
+Requirement already satisfied: pyparsing<4,>=3.0.4 in ./.local/lib/python3.11/site-packages (from httplib2<1.0.0,>=0.19.0->google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (3.2.5)
+Requirement already satisfied: pyasn1<0.7.0,>=0.6.1 in ./.local/lib/python3.11/site-packages (from pyasn1-modules>=0.2.1->google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.6.1)
+
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Using manual sharding: Shard 3/4
+🚀 Starting Scyro with Enhanced Smart Sync System...
+🔧 Using manual sharding system...
+[09:56:46] ℹ️ Starting Scyro initialization...
+[09:56:46] ℹ️ ✅ Patches applied successfully
+[09:56:46] ✅ Keep-alive server initialized on port 8080
+ * Serving Flask app 'main'
+ * Debug mode: off
+[09:56:46] ✅ ✅ Loaded extension: status
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.18.0.117:8080
+Press CTRL+C to quit
+Using manual sharding: Shard 3/4
+⚠️ Help cog loaded but slash sync failed: Client does not have an application_id set. Either the function was called before on_ready was called or application_id was not passed to the Client constructor.
+[09:56:47] ✅ ✅ Loaded extension: cogs.commands.help
+✅ VCRole cog loaded, syncing slash commands...
+✅ [Ignore System] Database initialized successfully!
+[Embed] ✅ Database connected with FULL DATA PRESERVATION support!
+✅ Logging cog loaded, syncing slash commands...
+[TempVC] Initializing cog
+[TempVC] Initializing database
+[TempVC] Database initialized
+[TempVC] Cog initialized
+[TempVC] Cog loaded - panels will be restored when bot is ready
+[TempVC] Initializing database
+[TempVC] Database initialized
+All cogs loaded successfully.
+[09:56:47] ✅ ✅ Loaded extension: cogs
+[09:56:47] ℹ️ Extension loading complete: 3 extensions loaded
+[09:56:47] ℹ️ 🚀 Connecting to Discord...
+[09:56:47] -> logging in using static token
+✅ VCRole database tables initialized successfully!
+✅ Extraowner database initialized successfully
+✅ [Smart AutoResponder] Database initialized successfully!
+✅ Premium system initialized
+✅ Antinuke database initialized successfully
+[09:56:47] -> [Blacklist] Advanced database initialized successfully with migrations!
+✅ Logging database tables initialized successfully!
+Failed to load extension cogs: Extension 'cogs' is already loaded.
+[09:56:48] -> Shard ID 3 has connected to Gateway (Session ID: 74a41c9abc5aa4f78f2076ea78f3caa2).
+[09:56:50] ✅ Initialized bot owners database with 2 owners
+
+
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                                                                       ║
+    ║    👻 Scyro BOT — POWERED BY ZENOXX ⚡                      ║
+    ║                                                                       ║
+    ║    🌟 Advanced Discord Bot Framework                           ║
+    ║    ⚡ Lightning Fast • Secure • Feature Rich                    ║
+    ║                                                                       ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════
+[09:56:50] ✅ Scyro is now ONLINE!
+[09:56:50] ℹ️ Logged in as: Scyro#6420
+[09:56:50] ℹ️ Connected to 25 guilds
+[09:56:50] ℹ️ Serving 454 unique users
+[09:56:50] ℹ️ Bot latency: 18ms
+[09:56:50] ℹ️ Syncing commands: Command structure changed
+[WELCOME SYSTEM] Bot started - Restoring persistent views...
+[EMBED SYSTEM] Bot started - Restoring persistent embed views...
+[TICKET SYSTEM] Bot started - Restoring persistent views...
+[TempVC] Bot is ready! Starting panel restoration...
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+[09:56:52] ℹ️ Found 80 slash commands to sync
+[TICKET SYSTEM] Restoration complete:
+  - Panels restored: 0
+  - Control views restored: 0
+  - Database entries cleaned: 0
+[09:56:53] -> We are being rate limited. PUT https://discord.com/api/v10/applications/1387046835322880050/commands responded with 429. Retrying in 364.53 seconds.
+[EMBED SYSTEM] Restoration complete:
+  - Interactive views restored: 0
+  - Database entries cleaned: 0
+[WELCOME SYSTEM] Restoration complete:
+  - Views restored: 0
+  - Database entries cleaned: 0
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+[09:59:54] ⚠️ Shutting down Scyro gracefully...
+[09:59:54] ℹ️ Cancelling 6 pending tasks...
+✨ Process terminated.
+Traceback (most recent call last):
+  File "/home/container/main.py", line 1386, in main
+    await client.start(TOKEN)
+  File "/home/container/.local/lib/python3.11/site-packages/discord/client.py", line 847, in start
+    await self.connect(reconnect=reconnect)
+  File "/home/container/.local/lib/python3.11/site-packages/discord/client.py", line 727, in connect
+    await self.ws.poll_event()
+  File "/home/container/.local/lib/python3.11/site-packages/discord/gateway.py", line 631, in poll_event
+    msg = await self.socket.receive(timeout=self._max_heartbeat_timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/container/.local/lib/python3.11/site-packages/aiohttp/client_ws.py", line 334, in receive
+    msg = await self._reader.read()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "aiohttp/_websocket/reader_c.py", line 118, in read
+  File "aiohttp/_websocket/reader_c.py", line 115, in aiohttp._websocket.reader_c.WebSocketDataQueue.read
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/container/main.py", line 1429, in <module>
+    asyncio.run(main())
+  File "/usr/local/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/container/main.py", line 1394, in main
+    await shutdown_handler(client)
+  File "/home/container/main.py", line 1302, in shutdown_handler
+    await asyncio.wait_for(
+  File "/usr/local/lib/python3.11/asyncio/tasks.py", line 485, in wait_for
+    await _cancel_and_wait(fut, loop=loop)
+  File "/usr/local/lib/python3.11/asyncio/tasks.py", line 562, in _cancel_and_wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+[Pterodactyl Daemon]: Checking server disk space usage, this could take a few seconds...
+[Pterodactyl Daemon]: Updating process configuration files...
+[Pterodactyl Daemon]: Ensuring file permissions are set correctly, this could take a few seconds...
+[Pterodactyl Daemon]: Pulling Docker container image, this could take a few minutes to complete...
+[Pterodactyl Daemon]: Finished pulling Docker container image
+Python 3.11.14
+container~ missing=""; [[ -z "${GIT_ADDRESS}" ]] && missing+="GIT_ADDRESS "; [[ -z "${BRANCH}" ]] && missing+="BRANCH "; [[ -z "${USERNAME}" ]] && missing+="USERNAME "; [[ -z "${ACCESS_TOKEN}" ]] && missing+="ACCESS_TOKEN "; if [[ -z "$missing" ]]; then AUTH_GIT_URL="https://${USERNAME}:${ACCESS_TOKEN}@${GIT_ADDRESS#https://}"; if [[ ! -d .git ]]; then git clone --branch "${BRANCH}" "${AUTH_GIT_URL}" .; elif [[ "${AUTO_UPDATE}" == "1" ]]; then git pull origin "${BRANCH}"; fi; else echo "Skipping git operations, missing variables: $missing"; fi; if [[ ! -z "${PY_PACKAGES}" ]]; then pip install -U --prefix .local ${PY_PACKAGES}; fi; if [[ -f /home/container/${REQUIREMENTS_FILE} ]]; then pip install -U --prefix .local -r /home/container/${REQUIREMENTS_FILE}; fi; /usr/local/bin/python /home/container/${PY_FILE}
+Skipping git operations, missing variables: GIT_ADDRESS BRANCH USERNAME ACCESS_TOKEN 
+Requirement already satisfied: Quart in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 1)) (0.20.0)
+Requirement already satisfied: discord.py in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 2)) (2.6.4)
+Requirement already satisfied: discord.ui in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 3)) (5.1.6)
+Requirement already satisfied: jishaku in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 4)) (2.6.3)
+Requirement already satisfied: asyncio in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 5)) (4.0.0)
+Requirement already satisfied: aiohttp in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 6)) (3.13.2)
+Requirement already satisfied: datetime in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 7)) (5.5)
+Requirement already satisfied: flask in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 8)) (3.1.2)
+Requirement already satisfied: typing in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 9)) (3.7.4.3)
+Requirement already satisfied: psutil in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 10)) (7.1.2)
+Requirement already satisfied: collection in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 11)) (0.1.6)
+Requirement already satisfied: pathlib in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 12)) (1.0.1)
+Requirement already satisfied: pymongo in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 13)) (4.15.3)
+Requirement already satisfied: wavelink in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 14)) (3.4.1)
+Requirement already satisfied: httpx in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 15)) (0.28.1)
+Requirement already satisfied: discord.ext-context in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 16)) (0.1.8)
+Requirement already satisfied: tasksio in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 17)) (0.0.0)
+Requirement already satisfied: motor in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 18)) (3.7.1)
+Requirement already satisfied: Augmentor in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 19)) (0.2.12)
+Requirement already satisfied: numpy in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 20)) (2.3.4)
+Requirement already satisfied: aiosqlite in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 21)) (0.21.0)
+Requirement already satisfied: gtts in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 22)) (2.5.4)
+Requirement already satisfied: langdetect in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 23)) (1.0.9)
+Requirement already satisfied: python-dotenv in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 24)) (1.2.1)
+Requirement already satisfied: pyttsx3 in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 25)) (2.99)
+Requirement already satisfied: PyYAML in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 26)) (6.0.3)
+Requirement already satisfied: requests in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 27)) (2.32.5)
+Requirement already satisfied: openai in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 28)) (2.6.1)
+Requirement already satisfied: duckduckgo-search==6.3.6 in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 29)) (6.3.6)
+Requirement already satisfied: pillow==11.0.0 in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 30)) (11.0.0)
+Requirement already satisfied: colorama in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 31)) (0.4.6)
+Requirement already satisfied: chess in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 32)) (1.11.2)
+Requirement already satisfied: python-dateutil in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 33)) (2.9.0.post0)
+Requirement already satisfied: topggpy in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 34)) (1.4.0)
+Requirement already satisfied: google-generativeai in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 35)) (0.8.5)
+Requirement already satisfied: groq in ./.local/lib/python3.11/site-packages (from -r /home/container/requirements.txt (line 36)) (0.33.0)
+Requirement already satisfied: click>=8.1.7 in ./.local/lib/python3.11/site-packages (from duckduckgo-search==6.3.6->-r /home/container/requirements.txt (line 29)) (8.1.8)
+Requirement already satisfied: primp>=0.8.0 in ./.local/lib/python3.11/site-packages (from duckduckgo-search==6.3.6->-r /home/container/requirements.txt (line 29)) (0.15.0)
+Requirement already satisfied: aiofiles in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (25.1.0)
+Requirement already satisfied: blinker>=1.6 in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (1.9.0)
+Requirement already satisfied: hypercorn>=0.11.2 in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (0.17.3)
+Requirement already satisfied: itsdangerous in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (2.2.0)
+Requirement already satisfied: jinja2 in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (3.1.6)
+Requirement already satisfied: markupsafe in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (3.0.3)
+Requirement already satisfied: werkzeug>=3.0 in ./.local/lib/python3.11/site-packages (from Quart->-r /home/container/requirements.txt (line 1)) (3.1.3)
+Requirement already satisfied: braceexpand>=0.1.7 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (0.1.7)
+Requirement already satisfied: import_expression<3.0.0,>=2.0.0 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (2.2.1.post1)
+Requirement already satisfied: tabulate>=0.9.0 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (0.9.0)
+Requirement already satisfied: typing-extensions<5,>=4.3 in ./.local/lib/python3.11/site-packages (from jishaku->-r /home/container/requirements.txt (line 4)) (4.15.0)
+Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (2.6.1)
+Requirement already satisfied: aiosignal>=1.4.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (1.4.0)
+Requirement already satisfied: attrs>=17.3.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (25.4.0)
+Requirement already satisfied: frozenlist>=1.1.1 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (1.8.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (6.7.0)
+Requirement already satisfied: propcache>=0.2.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (0.4.1)
+Requirement already satisfied: yarl<2.0,>=1.17.0 in ./.local/lib/python3.11/site-packages (from aiohttp->-r /home/container/requirements.txt (line 6)) (1.22.0)
+Requirement already satisfied: zope.interface in ./.local/lib/python3.11/site-packages (from datetime->-r /home/container/requirements.txt (line 7)) (8.0.1)
+Requirement already satisfied: pytz in ./.local/lib/python3.11/site-packages (from datetime->-r /home/container/requirements.txt (line 7)) (2025.2)
+Requirement already satisfied: dnspython<3.0.0,>=1.16.0 in ./.local/lib/python3.11/site-packages (from pymongo->-r /home/container/requirements.txt (line 13)) (2.8.0)
+Requirement already satisfied: async-timeout in ./.local/lib/python3.11/site-packages (from wavelink->-r /home/container/requirements.txt (line 14)) (5.0.1)
+Requirement already satisfied: anyio in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (4.11.0)
+Requirement already satisfied: certifi in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (2025.10.5)
+Requirement already satisfied: httpcore==1.* in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (1.0.9)
+Requirement already satisfied: idna in ./.local/lib/python3.11/site-packages (from httpx->-r /home/container/requirements.txt (line 15)) (3.11)
+Requirement already satisfied: h11>=0.16 in ./.local/lib/python3.11/site-packages (from httpcore==1.*->httpx->-r /home/container/requirements.txt (line 15)) (0.16.0)
+Requirement already satisfied: tqdm>=4.9.0 in ./.local/lib/python3.11/site-packages (from Augmentor->-r /home/container/requirements.txt (line 19)) (4.67.1)
+Requirement already satisfied: six in ./.local/lib/python3.11/site-packages (from langdetect->-r /home/container/requirements.txt (line 23)) (1.17.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in ./.local/lib/python3.11/site-packages (from requests->-r /home/container/requirements.txt (line 27)) (3.4.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./.local/lib/python3.11/site-packages (from requests->-r /home/container/requirements.txt (line 27)) (2.5.0)
+Requirement already satisfied: distro<2,>=1.7.0 in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (1.9.0)
+Requirement already satisfied: jiter<1,>=0.10.0 in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (0.11.1)
+Requirement already satisfied: pydantic<3,>=1.9.0 in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (2.12.3)
+Requirement already satisfied: sniffio in ./.local/lib/python3.11/site-packages (from openai->-r /home/container/requirements.txt (line 28)) (1.3.1)
+Requirement already satisfied: google-ai-generativelanguage==0.6.15 in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (0.6.15)
+Requirement already satisfied: google-api-core in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (2.28.1)
+Requirement already satisfied: google-api-python-client in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (2.186.0)
+Requirement already satisfied: google-auth>=2.15.0 in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (2.42.1)
+Requirement already satisfied: protobuf in ./.local/lib/python3.11/site-packages (from google-generativeai->-r /home/container/requirements.txt (line 35)) (5.29.5)
+Requirement already satisfied: proto-plus<2.0.0dev,>=1.22.3 in ./.local/lib/python3.11/site-packages (from google-ai-generativelanguage==0.6.15->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.26.1)
+Requirement already satisfied: googleapis-common-protos<2.0.0,>=1.56.2 in ./.local/lib/python3.11/site-packages (from google-api-core->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.71.0)
+Requirement already satisfied: cachetools<7.0,>=2.0.0 in ./.local/lib/python3.11/site-packages (from google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (6.2.1)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in ./.local/lib/python3.11/site-packages (from google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.4.2)
+Requirement already satisfied: rsa<5,>=3.1.4 in ./.local/lib/python3.11/site-packages (from google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (4.9.1)
+Requirement already satisfied: h2>=3.1.0 in ./.local/lib/python3.11/site-packages (from hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (4.3.0)
+Requirement already satisfied: priority in ./.local/lib/python3.11/site-packages (from hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (2.0.0)
+Requirement already satisfied: wsproto>=0.14.0 in ./.local/lib/python3.11/site-packages (from hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (1.2.0)
+Requirement already satisfied: annotated-types>=0.6.0 in ./.local/lib/python3.11/site-packages (from pydantic<3,>=1.9.0->openai->-r /home/container/requirements.txt (line 28)) (0.7.0)
+Requirement already satisfied: pydantic-core==2.41.4 in ./.local/lib/python3.11/site-packages (from pydantic<3,>=1.9.0->openai->-r /home/container/requirements.txt (line 28)) (2.41.4)
+Requirement already satisfied: typing-inspection>=0.4.2 in ./.local/lib/python3.11/site-packages (from pydantic<3,>=1.9.0->openai->-r /home/container/requirements.txt (line 28)) (0.4.2)
+Requirement already satisfied: httplib2<1.0.0,>=0.19.0 in ./.local/lib/python3.11/site-packages (from google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.31.0)
+Requirement already satisfied: google-auth-httplib2<1.0.0,>=0.2.0 in ./.local/lib/python3.11/site-packages (from google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.2.1)
+Requirement already satisfied: uritemplate<5,>=3.0.1 in ./.local/lib/python3.11/site-packages (from google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (4.2.0)
+Requirement already satisfied: grpcio<2.0.0,>=1.33.2 in ./.local/lib/python3.11/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.76.0)
+Requirement already satisfied: grpcio-status<2.0.0,>=1.33.2 in ./.local/lib/python3.11/site-packages (from google-api-core[grpc]!=2.0.*,!=2.1.*,!=2.10.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*,!=2.8.*,!=2.9.*,<3.0.0dev,>=1.34.1->google-ai-generativelanguage==0.6.15->google-generativeai->-r /home/container/requirements.txt (line 35)) (1.71.2)
+Requirement already satisfied: hyperframe<7,>=6.1 in ./.local/lib/python3.11/site-packages (from h2>=3.1.0->hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (6.1.0)
+Requirement already satisfied: hpack<5,>=4.1 in ./.local/lib/python3.11/site-packages (from h2>=3.1.0->hypercorn>=0.11.2->Quart->-r /home/container/requirements.txt (line 1)) (4.1.0)
+Requirement already satisfied: pyparsing<4,>=3.0.4 in ./.local/lib/python3.11/site-packages (from httplib2<1.0.0,>=0.19.0->google-api-python-client->google-generativeai->-r /home/container/requirements.txt (line 35)) (3.2.5)
+Requirement already satisfied: pyasn1<0.7.0,>=0.6.1 in ./.local/lib/python3.11/site-packages (from pyasn1-modules>=0.2.1->google-auth>=2.15.0->google-generativeai->-r /home/container/requirements.txt (line 35)) (0.6.1)
+[notice] A new release of pip is available: 24.0 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+Using manual sharding: Shard 3/4
+🚀 Starting Scyro with Enhanced Smart Sync System...
+🔧 Using manual sharding system...
+[10:00:22] ℹ️ Starting Scyro initialization...
+[10:00:22] ℹ️ ✅ Patches applied successfully
+[10:00:22] ✅ Keep-alive server initialized on port 8080
+ * Serving Flask app 'main'
+ * Debug mode: off
+[10:00:22] ✅ ✅ Loaded extension: status
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://172.18.0.117:8080
+Press CTRL+C to quit
+Using manual sharding: Shard 3/4
+⚠️ Help cog loaded but slash sync failed: Client does not have an application_id set. Either the function was called before on_ready was called or application_id was not passed to the Client constructor.
+[10:00:23] ✅ ✅ Loaded extension: cogs.commands.help
+✅ VCRole cog loaded, syncing slash commands...
+[Embed] ✅ Database connected with FULL DATA PRESERVATION support!
+✅ Logging cog loaded, syncing slash commands...
+[TempVC] Initializing cog
+[TempVC] Initializing database
+[TempVC] Database initialized
+[TempVC] Cog initialized
+[TempVC] Cog loaded - panels will be restored when bot is ready
+[TempVC] Initializing database
+[TempVC] Database initialized
+All cogs loaded successfully.
+[10:00:23] ✅ ✅ Loaded extension: cogs
+[10:00:23] ℹ️ Extension loading complete: 3 extensions loaded
+[10:00:23] ℹ️ 🚀 Connecting to Discord...
+[10:00:23] -> logging in using static token
+✅ Extraowner database initialized successfully
+✅ [Ignore System] Database initialized successfully!
+✅ [Smart AutoResponder] Database initialized successfully!
+✅ VCRole database tables initialized successfully!
+✅ Antinuke database initialized successfully
+✅ Premium system initialized
+✅ Logging database tables initialized successfully!
+[10:00:23] -> [Blacklist] Advanced database initialized successfully with migrations!
+Failed to load extension cogs: Extension 'cogs' is already loaded.
+[10:00:24] -> Shard ID 3 has connected to Gateway (Session ID: cdb9659578afbc69fb625ebc0a017b75).
+[10:00:26] ✅ Initialized bot owners database with 2 owners
+
+
+    ╔═══════════════════════════════════════════════════════════════════════╗
+    ║                                                                       ║
+    ║    👻 Scyro BOT — POWERED BY ZENOXX ⚡                      ║
+    ║                                                                       ║
+    ║    🌟 Advanced Discord Bot Framework                           ║
+    ║    ⚡ Lightning Fast • Secure • Feature Rich                    ║
+    ║                                                                       ║
+    ╚═══════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════
+[10:00:26] ✅ Scyro is now ONLINE!
+[10:00:26] ℹ️ Logged in as: Scyro#6420
+[10:00:26] ℹ️ Connected to 25 guilds
+[10:00:26] ℹ️ Serving 454 unique users
+[10:00:26] ℹ️ Bot latency: 17ms
+[10:00:26] ℹ️ Syncing commands: Command structure changed
+[WELCOME SYSTEM] Bot started - Restoring persistent views...
+[EMBED SYSTEM] Bot started - Restoring persistent embed views...
+[TICKET SYSTEM] Bot started - Restoring persistent views...
+[TempVC] Bot is ready! Starting panel restoration...
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+[10:00:28] ℹ️ Found 80 slash commands to sync
+[TICKET SYSTEM] Restoration complete:
+  - Panels restored: 0
+  - Control views restored: 0
+  - Database entries cleaned: 0
+[10:00:28] -> We are being rate limited. PUT https://discord.com/api/v10/applications/1387046835322880050/commands responded with 429. Retrying in 149.06 seconds.
+[EMBED SYSTEM] Restoration complete:
+  - Interactive views restored: 0
+  - Database entries cleaned: 0
+[WELCOME SYSTEM] Restoration complete:
+  - Views restored: 0
+  - Database entries cleaned: 0
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+[10:02:57] -> We are being rate limited. PUT https://discord.com/api/v10/applications/1387046835322880050/commands responded with 429. Retrying in 431.74 seconds.
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+[10:10:09] -> We are being rate limited. PUT https://discord.com/api/v10/applications/1387046835322880050/commands responded with 429. Retrying in 431.72 seconds.
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
+Channel with ID 1409380524451172433 not found.
+Status updated to: idle - dsc.gg/scyrogg
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - Operating • Shard 4/4!
+Channel with ID 1409380524451172433 not found.
+Status updated to: dnd - Scyro • Secure
+Channel with ID 1409380524451172433 not found.
+Status updated to: online - /help • 0.1k Servers!
