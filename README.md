@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ### 4 Configure the bot
 
-in `.env` put the credentials.
+rename `example.env` to `.env` and put the credentials.
 
 Example:
 
